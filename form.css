@@ -1,0 +1,16 @@
+/*
+   Form Styles
+*/  
+
+.wufoo .info h2{
+  color:#4eb96e
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 40px;
+}
+
+.wufoo input.text {
+
+	color: #333;
+}
