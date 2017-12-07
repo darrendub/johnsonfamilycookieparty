@@ -1,0 +1,15 @@
+.btn {
+  @include btn-base;
+  background-color: $primary;
+  border-radius: $border-radius;
+  color: white;
+  padding: .25em 1.5em;
+}
+
+.btn--mirror {
+  transform: scale(-1, 1);
+}
+
+.btn--large {
+  font-size: 2em;
+}
