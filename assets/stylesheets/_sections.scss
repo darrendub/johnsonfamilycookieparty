@@ -1,7 +1,26 @@
 // Section-specific
 
+.section {
+  padding: 6em 0;
+}
+
+.strange-section__blurb,
+.arcade-section__blurb,
+.leaderboard {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.hero-section__blurb,
+.strange-section__headline {
+  font-family: $font-stack--serif;
+  font-weight: $weight--regular;
+  text-transform: uppercase;
+}
+
 .hero-section {
-  background: url("../header-bg.png"), no-repeat;
+  background: url("#{$asset-path}" + "#{$hero-background}"), no-repeat;
+  background-size: cover;
   padding: 6em 0;
   text-align: center;
 }
@@ -12,7 +31,7 @@
 }
 
 .hero-section__blurb {
-  color: $primary;
+  color: $ruby;
 }
 
 .hero-section__date {
@@ -22,4 +41,61 @@
 
 .hero-section__place {
   font-size: 1.5em;
+}
+
+.netflix-logo {
+  fill: #e50914;
+  height: 2.5em;
+  padding: 0 1em;
+  width: 8em;
+}
+
+.strange-section {
+  background:
+        linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+        black
+        url("#{$asset-path}" + "#{$joyce-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 150%;
+}
+
+.strange-section__blurb {
+  color: white;
+}
+
+.strange-section__button {
+  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(#000, 0.2);
+  margin-top: 3em;
+  text-align: left;
+  padding: 1em;
+  width: 100%;
+}
+
+.strange-section__netflix {
+  align-items: center;
+  display: flex;
+  font-weight: $weight--semibold;
+  letter-spacing: 1px;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+.arcade-section {
+  background-color: black;
+}
+
+.arcade-section__headline {
+  border-bottom: .1em solid $ruby;
+  border-top: .1em solid $ruby;
+  color: $ruby;
+  font-size: 3em;  // unify / extract these
+  padding: .25em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.leaderboard__rank {
+  color: $lemon;
 }
