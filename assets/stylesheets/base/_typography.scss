@@ -1,7 +1,14 @@
 // what's a font
 
-$sans-serif:		'Arimo', sans-serif;
-$serif:				'Amarante', cursive;
+$font-stack--sans: 'Arimo', sans-serif;
+$font-stack--serif: 'Amarante', cursive;
+$font-stack--retro: tbd;
+
+body {
+  font-family: $font-stack--sans;
+  font-size: 1em;
+  line-height: 1.5;
+}
 
 p {
   margin: 0;
