@@ -3,9 +3,14 @@
 @mixin btn-base {
   border: 0;
   box-shadow: none;
+  cursor: pointer;
   font: inherit;
   margin: 0;
   padding: 0;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
 }
 
 @mixin sr-only {
