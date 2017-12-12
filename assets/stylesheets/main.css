@@ -22,6 +22,11 @@ svg {
   max-width: 90%;
   margin: 0 auto; }
 
+@font-face {
+  font-family: 'arcade';
+  src: url("../font/arcade.woff2") format("woff2"), url("../font/arcade.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: "Arimo", sans-serif;
   font-size: 1em;
@@ -45,7 +50,8 @@ p {
 .btn--primary {
   background-color: #D22418;
   color: white;
-  font-family: "Amarante", cursive; }
+  font-family: "Amarante", cursive;
+  margin-bottom: 2em; }
 
 .btn--mirror {
   transform: scale(-1, 1); }
@@ -67,11 +73,13 @@ p {
 
 .strange-section__blurb,
 .arcade-section__blurb,
-.leaderboard {
+.leaderboard,
+.adios-section__blurb {
   margin: 0 auto;
   max-width: 50%; }
 
 .hero-section__blurb,
+.adios-section,
 .strange-section__headline {
   font-family: "Amarante", cursive;
   font-weight: 400;
@@ -91,11 +99,11 @@ p {
   color: #D22418; }
 
 .hero-section__date {
-  font-size: 2em;
+  font-size: 24px;
   font-weight: 600; }
 
 .hero-section__place {
-  font-size: 1.5em; }
+  font-size: 16px; }
 
 .netflix-logo {
   fill: #e50914;
@@ -131,16 +139,61 @@ p {
 .arcade-section {
   background-color: black; }
 
-.arcade-section__headline {
-  border-bottom: 0.1em solid #D22418;
-  border-top: 0.1em solid #D22418;
-  color: #D22418;
-  font-size: 3em;
-  padding: .25em 0;
-  text-align: center;
-  text-transform: uppercase; }
+.cookie-decorator {
+  fill: #D22418;
+  height: 5em;
+  padding: 0 1em;
+  width: 8em; }
 
-.leaderboard__rank {
+.leaderboard__label {
+  font-family: "arcade", Courier, monospace;
+  font-size: 16px;
   color: #FDFD00; }
+
+.leaderboard__item {
+  font-family: "arcade", Courier, monospace;
+  font-size: 32px;
+  color: #FFF; }
+
+.arcade-section__teaser {
+  font-family: "arcade", Courier, monospace;
+  font-size: 16px;
+  color: #FFF; }
+
+.events-section {
+  align-items: center;
+  display: flex; }
+
+.events-section__costume,
+.events-section__food {
+  position: relative; }
+
+.events-section__image,
+.donations-section__image {
+  max-width: 360px; }
+
+.events-section__caption {
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+  padding: 1em;
+  text-align: center;
+  background-image: linear-gradient(-180deg, rgba(2, 7, 16, 0) 19%, rgba(2, 7, 16, 0.98) 71%, #020710 100%); }
+
+.donations-section .wrapper {
+  align-items: center;
+  display: flex; }
+
+.adios-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), black url("../images/footer-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 150%; }
+
+.adios-section__blurb {
+  color: #D22418; }
+
+.adios-section__headline {
+  font-size: 40px; }
 
 /*# sourceMappingURL=main.css.map */

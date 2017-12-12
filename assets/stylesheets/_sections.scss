@@ -6,12 +6,14 @@
 
 .strange-section__blurb,
 .arcade-section__blurb,
-.leaderboard {
+.leaderboard,
+.adios-section__blurb {
   margin: 0 auto;
   max-width: 50%;
 }
 
 .hero-section__blurb,
+.adios-section,
 .strange-section__headline {
   font-family: $font-stack--serif;
   font-weight: $weight--regular;
@@ -35,12 +37,12 @@
 }
 
 .hero-section__date {
-  font-size: 2em;
+  font-size: $type--medium;
   font-weight: $weight--semibold;
 }
 
 .hero-section__place {
-  font-size: 1.5em;
+  font-size: $type--small;
 }
 
 .netflix-logo {
@@ -86,16 +88,83 @@
   background-color: black;
 }
 
-.arcade-section__headline {
-  border-bottom: .1em solid $ruby;
-  border-top: .1em solid $ruby;
-  color: $ruby;
-  font-size: 3em;  // unify / extract these
-  padding: .25em 0;
-  text-align: center;
-  text-transform: uppercase;
+.cookie-decorator {
+  fill: $ruby;
+  height: 5em;
+  padding: 0 1em;
+  width: 8em; }
+
+.leaderboard {
 }
 
-.leaderboard__rank {
+.leaderboard__row {
+}
+
+.leaderboard__list { 
+}
+
+.leaderboard__label {
+  font-family: $font-stack--retro;
+  font-size: $type--small;
   color: $lemon;
+}
+.leaderboard__item {
+  font-family: $font-stack--retro;
+  font-size: $type--large;
+  color: $white;
+}
+
+.arcade-section__teaser {
+  font-family: $font-stack--retro;
+  font-size: $type--small;
+  color: $white;
+}
+
+.events-section {
+  align-items: center;
+  display: flex;
+}
+
+.events-section__costume,
+.events-section__food {
+  position: relative;
+}
+.events-section__image,
+.donations-section__image {
+  max-width: 360px;
+}
+
+.events-section__caption {
+  position: absolute;
+  bottom: 0;
+  color: $white;
+  padding: 1em;
+  text-align: center;
+  background-image: linear-gradient(-180deg, rgba(2,7,16,0.00) 19%, rgba(2,7,16,0.98) 71%, #020710 100%);
+}
+
+.donations-section  {
+  .wrapper {
+  align-items: center;
+  display: flex;
+  }
+}
+
+.adios-section {
+    background:
+        linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+        black
+        url("#{$asset-path}" + "#{$footer-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 150%;
+}
+
+
+.adios-section__blurb{
+  color: $ruby;
+}
+
+.adios-section__headline {
+  font-size: $type--xl;
 }
