@@ -22,6 +22,12 @@ svg {
   max-width: 90%;
   margin: 0 auto; }
 
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: stretch;
+  justify-content: space-around; }
+
 @font-face {
   font-family: 'arcade';
   src: url("../font/arcade.woff2") format("woff2"), url("../font/arcade.woff") format("woff");
@@ -73,7 +79,6 @@ p {
 
 .strange-section__blurb,
 .arcade-section__blurb,
-.leaderboard,
 .adios-section__blurb {
   margin: 0 auto;
   max-width: 50%; }
@@ -113,12 +118,13 @@ p {
 
 .strange-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), black url("../images/joyce-bg.png");
-  background-position: center bottom;
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: auto 150%; }
+  background-size: auto 100%; }
 
 .strange-section__blurb {
-  color: white; }
+  color: white;
+  margin-left: 8em; }
 
 .strange-section__button {
   -webkit-backdrop-filter: blur(2px);
@@ -126,7 +132,7 @@ p {
   margin-top: 3em;
   text-align: left;
   padding: 1em;
-  width: 100%; }
+  width: 75%; }
 
 .strange-section__netflix {
   align-items: center;
@@ -139,11 +145,24 @@ p {
 .arcade-section {
   background-color: black; }
 
+.arcade-section__blurb {
+  padding-bottom: 3em; }
+
 .cookie-decorator {
   fill: #D22418;
   height: 5em;
   padding: 0 1em;
   width: 8em; }
+
+.leaderboard {
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: stretch;
+  justify-content: space-around; }
+
+.leaderboard__row {
+  padding-top: 2em; }
 
 .leaderboard__label {
   font-family: "arcade", Courier, monospace;
@@ -155,10 +174,30 @@ p {
   font-size: 32px;
   color: #FFF; }
 
+.blink {
+  color: #FDFD00;
+  -webkit-animation: blink linear 1.25s infinite;
+  animation: blink linear 1.25s infinite; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .1; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .1; }
+  100% {
+    opacity: 1; } }
 .arcade-section__teaser {
   font-family: "arcade", Courier, monospace;
   font-size: 16px;
-  color: #FFF; }
+  color: #FFF;
+  text-align: center; }
 
 .events-section {
   align-items: center;
@@ -195,5 +234,20 @@ p {
 
 .adios-section__headline {
   font-size: 40px; }
+
+.logo--small {
+  max-width: 12em; }
+
+.upside-up {
+  position: relative; }
+
+.upside-down {
+  cursor: pointer;
+  margin-top: -97px;
+  position: absolute;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out; }
+  .upside-down:hover {
+    opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

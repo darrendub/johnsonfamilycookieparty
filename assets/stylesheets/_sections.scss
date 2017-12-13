@@ -6,7 +6,6 @@
 
 .strange-section__blurb,
 .arcade-section__blurb,
-.leaderboard,
 .adios-section__blurb {
   margin: 0 auto;
   max-width: 50%;
@@ -27,7 +26,7 @@
   text-align: center;
 }
 
-.hero-section__logo {
+.hero-section__logo { // Need to resize for small screens
   margin: 0 auto;
   margin-bottom: 4em;
 }
@@ -57,13 +56,14 @@
         linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
         black
         url("#{$asset-path}" + "#{$joyce-background}");
-  background-position: center bottom;
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: auto 150%;
+  background-size: auto 100%;
 }
 
 .strange-section__blurb {
   color: white;
+  margin-left: 8em; // Need to remove for small screens
 }
 
 .strange-section__button {
@@ -72,7 +72,7 @@
   margin-top: 3em;
   text-align: left;
   padding: 1em;
-  width: 100%;
+  width: 75%;
 }
 
 .strange-section__netflix {
@@ -88,16 +88,26 @@
   background-color: black;
 }
 
+.arcade-section__blurb {
+  padding-bottom: 3em;
+}
+
 .cookie-decorator {
   fill: $ruby;
   height: 5em;
   padding: 0 1em;
   width: 8em; }
 
-.leaderboard {
+.leaderboard { // Need to rearrange grid for small screens
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: stretch;
+  justify-content: space-around;
 }
 
 .leaderboard__row {
+  padding-top: 2em;
 }
 
 .leaderboard__list { 
@@ -114,10 +124,28 @@
   color: $white;
 }
 
+
+.blink{
+  color:$lemon;
+  -webkit-animation: blink linear 1.25s infinite;
+  animation: blink linear 1.25s infinite;
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes blink {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+
 .arcade-section__teaser {
   font-family: $font-stack--retro;
   font-size: $type--small;
   color: $white;
+  text-align: center;
 }
 
 .events-section {
@@ -167,4 +195,22 @@
 
 .adios-section__headline {
   font-size: $type--xl;
+}
+
+.logo--small {
+  max-width: 12em;
+}
+
+.upside-up {
+  position: relative;
+}
+.upside-down {
+  cursor: pointer;
+  margin-top: -97px;
+  position: absolute;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
 }
