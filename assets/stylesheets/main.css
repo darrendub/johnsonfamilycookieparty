@@ -98,7 +98,9 @@ p {
 
 .hero-section__logo {
   margin: 0 auto;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  width: 100%;
+  max-width: 600px; }
 
 .hero-section__blurb {
   color: #D22418; }
@@ -236,7 +238,8 @@ p {
   font-size: 40px; }
 
 .logo--small {
-  max-width: 12em; }
+  width: 100%;
+  max-width: 300px; }
 
 .upside-up {
   position: relative; }
