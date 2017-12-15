@@ -1,6 +1,3 @@
-// Vendor Reset
-// @import "../../mnml.css";
-
 // Setup
 @import "config/config";
 @import "config/mixins";
@@ -11,6 +8,7 @@
 @import "base/layout";
 @import "base/typography";
 @import "base/color";
+@import "base/animation";
 
 // Components
 @import "components";

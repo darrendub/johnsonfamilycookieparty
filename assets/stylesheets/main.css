@@ -213,7 +213,6 @@ p {
   color: #FDFD00;
   -webkit-animation: blink linear 1.25s infinite;
   animation: blink linear 1.25s infinite; }
-
 @-webkit-keyframes blink {
   0% {
     opacity: 1; }

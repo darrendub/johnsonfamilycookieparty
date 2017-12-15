@@ -115,7 +115,7 @@
   padding: 0 1em;
   width: 8em; }
 
-.leaderboard { // Need to rearrange grid for small screens
+.leaderboard { 
   padding-bottom: 3em;
   display: grid;
   grid-template-columns: auto;
@@ -150,18 +150,7 @@
 
 .blink{
   color:$lemon;
-  -webkit-animation: blink linear 1.25s infinite;
-  animation: blink linear 1.25s infinite;
-}
-@-webkit-keyframes blink {
-  0% { opacity: 1; } 
-  50% { opacity: .1; } 
-  100% { opacity: 1; }
-}
-@keyframes blink {
-  0% { opacity: 1; } 
-  50% { opacity: .1; } 
-  100% { opacity: 1; }
+  @include blink;
 }
 
 .arcade-section__teaser {
@@ -172,7 +161,7 @@
 }
 
 .events-section{
-  background-color: #020710;
+  background-color: $midnight;
   overflow: hidden;
 }
 
