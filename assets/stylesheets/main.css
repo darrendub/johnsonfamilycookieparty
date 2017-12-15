@@ -24,9 +24,23 @@ svg {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   justify-items: stretch;
+  align-items: center;
   justify-content: space-around; }
+  @media screen and (min-width: 800px) {
+    .grid {
+      grid-template-columns: auto auto; } }
+
+.grid-3-large {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: flex-start; }
+  @media screen and (min-width: 800px) {
+    .grid-3-large {
+      grid-template-columns: auto auto auto; } }
 
 @font-face {
   font-family: 'arcade';
@@ -75,13 +89,21 @@ p {
     background-color: rgba(0, 0, 0, 0.2); }
 
 .section {
-  padding: 6em 0; }
+  padding: 3em 0; }
+  @media screen and (min-width: 500px) {
+    .section {
+      padding: 6em 0; } }
 
 .strange-section__blurb,
 .arcade-section__blurb,
 .adios-section__blurb {
   margin: 0 auto;
-  max-width: 50%; }
+  max-width: 80%; }
+  @media screen and (min-width: 500px) {
+    .strange-section__blurb,
+    .arcade-section__blurb,
+    .adios-section__blurb {
+      max-width: 50%; } }
 
 .hero-section__blurb,
 .adios-section,
@@ -120,21 +142,24 @@ p {
 
 .strange-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), black url("../images/joyce-bg.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: auto 100%; }
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 500px) {
+    .strange-section {
+      background-position: top right; } }
 
 .strange-section__blurb {
-  color: white;
-  margin-left: 8em; }
+  color: white; }
+  @media screen and (min-width: 500px) {
+    .strange-section__blurb {
+      margin-left: 8em; } }
 
 .strange-section__button {
   -webkit-backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.2);
   margin-top: 3em;
   text-align: left;
-  padding: 1em;
-  width: 75%; }
+  padding: 1em; }
 
 .strange-section__netflix {
   align-items: center;
@@ -147,8 +172,9 @@ p {
 .arcade-section {
   background-color: black; }
 
-.arcade-section__blurb {
-  padding-bottom: 3em; }
+@media screen and (min-width: 500px) {
+  .arcade-section__blurb {
+    padding-bottom: 3em; } }
 
 .cookie-decorator {
   fill: #D22418;
@@ -159,9 +185,12 @@ p {
 .leaderboard {
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: auto auto auto;
-  justify-items: stretch;
-  justify-content: space-around; }
+  grid-template-columns: auto;
+  justify-items: stretch; }
+  @media screen and (min-width: 600px) {
+    .leaderboard {
+      grid-template-columns: auto auto auto;
+      justify-content: space-around; } }
 
 .leaderboard__row {
   padding-top: 2em; }
@@ -173,8 +202,11 @@ p {
 
 .leaderboard__item {
   font-family: "arcade", Courier, monospace;
-  font-size: 32px;
+  font-size: 24px;
   color: #FFF; }
+  @media screen and (min-width: 600px) {
+    .leaderboard__item {
+      font-size: 32px; } }
 
 .blink {
   color: #FDFD00;
@@ -202,34 +234,75 @@ p {
   text-align: center; }
 
 .events-section {
-  align-items: center;
-  display: flex; }
+  background-color: #020710;
+  overflow: hidden; }
 
 .events-section__costume,
 .events-section__food {
   position: relative; }
 
-.events-section__image,
-.donations-section__image {
-  max-width: 360px; }
+.events-section__food {
+  background: black url("../images/eleven.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px; }
+  @media screen and (min-width: 550px) {
+    .events-section__food {
+      width: 400px;
+      height: 400px; } }
+  @media screen and (min-width: 1020px) {
+    .events-section__food {
+      width: 500px;
+      height: 500px; } }
+
+.events-section__costume {
+  background: black url("../images/dustin.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px; }
+  @media screen and (min-width: 550px) {
+    .events-section__costume {
+      width: 400px;
+      height: 400px; } }
+  @media screen and (min-width: 1020px) {
+    .events-section__costume {
+      width: 500px;
+      height: 500px; } }
 
 .events-section__caption {
   position: absolute;
   bottom: 0;
   color: #FFF;
-  padding: 1em;
+  padding: 3em;
+  width: 100%;
   text-align: center;
   background-image: linear-gradient(-180deg, rgba(2, 7, 16, 0) 19%, rgba(2, 7, 16, 0.98) 71%, #020710 100%); }
 
-.donations-section .wrapper {
-  align-items: center;
-  display: flex; }
+.events-section__caption p {
+  padding-bottom: 1.5em; }
+
+.donations-section__image {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25); }
+
+@media screen and (min-width: 500px) {
+  .donations-section__blurb {
+    padding-left: 3em; } }
 
 .adios-section {
+  padding-top: 3em;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), black url("../images/footer-bg.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto 150%; }
+  @media screen and (min-width: 500px) {
+    .adios-section {
+      padding-top: 6em; } }
 
 .adios-section__blurb {
   color: #D22418; }
@@ -239,18 +312,24 @@ p {
 
 .logo--small {
   width: 100%;
-  max-width: 300px; }
+  max-width: 200px; }
 
 .upside-up {
-  position: relative; }
+  position: relative;
+  padding-top: 6em; }
 
 .upside-down {
   cursor: pointer;
-  margin-top: -97px;
+  bottom: 0;
   position: absolute;
   opacity: 0.5;
+  max-width: 300px;
+  left: 0;
   transition: opacity 0.3s ease-in-out; }
   .upside-down:hover {
     opacity: 1; }
+  @media screen and (min-width: 1000px) {
+    .upside-down {
+      max-width: 600px; } }
 
 /*# sourceMappingURL=main.css.map */

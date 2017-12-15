@@ -1,14 +1,20 @@
 // Section-specific
 
 .section {
-  padding: 6em 0;
+  padding: 3em 0;
+  @media screen and (min-width: $bp-small){
+    padding: 6em 0;
+  }
 }
 
 .strange-section__blurb,
 .arcade-section__blurb,
 .adios-section__blurb {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 80%;
+  @media screen and (min-width: $bp-small){
+    max-width: 50%;
+  }
 }
 
 .hero-section__blurb,
@@ -58,14 +64,18 @@
         linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
         black
         url("#{$asset-path}" + "#{$joyce-background}");
-  background-position: top right;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  @media screen and (min-width: $bp-small){
+    background-position: top right;
+  }     
 }
 
 .strange-section__blurb {
   color: white;
-  margin-left: 8em; // Need to remove for small screens
+  @media screen and (min-width: $bp-small){
+    margin-left: 8em;
+  }
 }
 
 .strange-section__button {
@@ -74,7 +84,6 @@
   margin-top: 3em;
   text-align: left;
   padding: 1em;
-  width: 75%;
 }
 
 .strange-section__netflix {
@@ -91,7 +100,9 @@
 }
 
 .arcade-section__blurb {
-  padding-bottom: 3em;
+  @media screen and (min-width: $bp-small){
+    padding-bottom: 3em;
+  }
 }
 
 .cookie-decorator {
@@ -103,9 +114,12 @@
 .leaderboard { // Need to rearrange grid for small screens
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   justify-items: stretch;
-  justify-content: space-around;
+  @media screen and (min-width: $bp-small+100){
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
 }
 
 .leaderboard__row {
@@ -122,8 +136,11 @@
 }
 .leaderboard__item {
   font-family: $font-stack--retro;
-  font-size: $type--large;
+  font-size: $type--medium;
   color: $white;
+  @media screen and (min-width: $bp-small+100){
+    font-size: $type--large;
+  }
 }
 
 
@@ -150,37 +167,83 @@
   text-align: center;
 }
 
-.events-section {
-  align-items: center;
-  display: flex;
+.events-section{
+  background-color: #020710;
+  overflow: hidden;
 }
+
 
 .events-section__costume,
 .events-section__food {
   position: relative;
 }
-.events-section__image,
-.donations-section__image {
-  max-width: 360px;
+
+.events-section__food {
+  background: 
+    black
+    url("#{$asset-path}" + "#{$food-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px;
+  @media screen and (min-width: $bp-small+50){
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (min-width: $bp-large+20){
+    width: 500px;
+    height: 500px;
+  }
+
+}
+.events-section__costume {
+  background: 
+    black
+    url("#{$asset-path}" + "#{$costume-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px;
+  @media screen and (min-width: $bp-small+50){
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (min-width: $bp-large+20){
+    width: 500px;
+    height: 500px;
+  }
 }
 
 .events-section__caption {
   position: absolute;
   bottom: 0;
   color: $white;
-  padding: 1em;
+  padding: 3em;
+  width: 100%;
   text-align: center;
   background-image: linear-gradient(-180deg, rgba(2,7,16,0.00) 19%, rgba(2,7,16,0.98) 71%, #020710 100%);
 }
+.events-section__caption p {
+  padding-bottom: 1.5em;
+}
 
-.donations-section  {
-  .wrapper {
-  align-items: center;
-  display: flex;
+.donations-section__image {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.25);
+}
+
+.donations-section__blurb {
+  
+  @media screen and (min-width: $bp-small){
+    padding-left:3em;
   }
 }
 
 .adios-section {
+  padding-top: 3em;
     background:
         linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
         black
@@ -188,6 +251,9 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto 150%;
+  @media screen and (min-width: $bp-small){
+    padding-top: 6em;
+  }
 }
 
 
@@ -201,19 +267,25 @@
 
 .logo--small {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .upside-up {
   position: relative;
+  padding-top: 6em;
 }
 .upside-down {
   cursor: pointer;
-  margin-top: -97px;
+  bottom: 0;
   position: absolute;
   opacity: 0.5;
+  max-width: 300px;
+  left: 0;
   transition: opacity 0.3s ease-in-out;
   &:hover {
     opacity: 1;
+  }
+  @media screen and (min-width: $bp-large){
+    max-width: 600px;
   }
 }

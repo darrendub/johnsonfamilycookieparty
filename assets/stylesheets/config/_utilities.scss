@@ -1,3 +1,6 @@
 .sr-only {
   @include sr-only;
 }
+
+$bp-small: 500px;
+$bp-large: 1000px;
