@@ -113,7 +113,7 @@ p {
   text-transform: uppercase; }
 
 .hero-section {
-  background: url("../images/header-bg.png"), no-repeat;
+  background: black url("../images/header-bg.png"), no-repeat;
   background-size: cover;
   padding: 6em 0;
   text-align: center; }
