@@ -26,7 +26,10 @@
 }
 
 .hero-section {
-  background: black url("#{$asset-path}" + "#{$hero-background}"), no-repeat;
+  background: 
+    black 
+    url("#{$asset-path}" + "#{$hero-background}");
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 0;
   text-align: center;
@@ -260,6 +263,10 @@
 
 .adios-section__blurb{
   color: $ruby;
+
+  button {
+    margin-top: 1.5em;
+  }
 }
 
 .adios-section__headline {

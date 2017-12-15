@@ -113,7 +113,8 @@ p {
   text-transform: uppercase; }
 
 .hero-section {
-  background: black url("../images/header-bg.png"), no-repeat;
+  background: black url("../images/header-bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 0;
   text-align: center; }
@@ -306,6 +307,8 @@ p {
 
 .adios-section__blurb {
   color: #D22418; }
+  .adios-section__blurb button {
+    margin-top: 1.5em; }
 
 .adios-section__headline {
   font-size: 40px; }
