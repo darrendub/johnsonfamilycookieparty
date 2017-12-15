@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto;
+	justify-items: stretch;
+	align-items: center;
+	justify-content: space-around;
+	@media screen and (min-width: 800px){
+		grid-template-columns: auto auto;
+	}
+}
+
+.grid-3-large {
+	display: grid;
+	grid-template-columns: auto;
+	justify-items: stretch;
+	align-items: center;
+	justify-content: flex-start;
+	@media screen and (min-width: 800px){
+		grid-template-columns: auto auto auto;
+	}
+}
+

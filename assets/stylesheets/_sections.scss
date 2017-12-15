@@ -1,0 +1,288 @@
+// Section-specific
+
+.section {
+  padding: 3em 0;
+  @media screen and (min-width: $bp-small){
+    padding: 6em 0;
+  }
+}
+
+.strange-section__blurb,
+.arcade-section__blurb,
+.adios-section__blurb {
+  margin: 0 auto;
+  max-width: 80%;
+  @media screen and (min-width: $bp-small){
+    max-width: 50%;
+  }
+}
+
+.hero-section__blurb,
+.adios-section,
+.strange-section__headline {
+  font-family: $font-stack--serif;
+  font-weight: $weight--regular;
+  text-transform: uppercase;
+}
+
+.hero-section {
+  background: 
+    black 
+    url("#{$asset-path}" + "#{$hero-background}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0;
+  text-align: center;
+
+}
+
+.hero-section__logo {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width:100%;
+  max-width: 600px;
+}
+
+.hero-section__blurb {
+  color: $ruby;
+}
+
+.hero-section__date {
+  font-size: $type--medium;
+  font-weight: $weight--semibold;
+}
+
+.hero-section__place {
+  font-size: $type--small;
+}
+
+.netflix-logo {
+  fill: #e50914;
+  height: 2.5em;
+  padding: 0 1em;
+  width: 8em;
+}
+
+.strange-section {
+  background:
+        linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+        black
+        url("#{$asset-path}" + "#{$joyce-background}");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $bp-small){
+    background-position: top right;
+  }     
+}
+
+.strange-section__blurb {
+  color: white;
+  @media screen and (min-width: $bp-small){
+    margin-left: 8em;
+  }
+}
+
+.strange-section__button {
+  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(#000, 0.2);
+  margin-top: 3em;
+  text-align: left;
+  padding: 1em;
+}
+
+.strange-section__netflix {
+  align-items: center;
+  display: flex;
+  font-weight: $weight--semibold;
+  letter-spacing: 1px;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+.arcade-section {
+  background-color: black;
+}
+
+.arcade-section__blurb {
+  @media screen and (min-width: $bp-small){
+    padding-bottom: 3em;
+  }
+}
+
+.cookie-decorator {
+  fill: $ruby;
+  height: 5em;
+  padding: 0 1em;
+  width: 8em; }
+
+.leaderboard { 
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: stretch;
+  @media screen and (min-width: $bp-small+100){
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
+}
+
+.leaderboard__row {
+  padding-top: 2em;
+}
+
+.leaderboard__list { 
+}
+
+.leaderboard__label {
+  font-family: $font-stack--retro;
+  font-size: $type--small;
+  color: $lemon;
+}
+.leaderboard__item {
+  font-family: $font-stack--retro;
+  font-size: $type--medium;
+  color: $white;
+  @media screen and (min-width: $bp-small+100){
+    font-size: $type--large;
+  }
+}
+
+
+.blink{
+  color:$lemon;
+  @include blink;
+}
+
+.arcade-section__teaser {
+  font-family: $font-stack--retro;
+  font-size: $type--small;
+  color: $white;
+  text-align: center;
+}
+
+.events-section{
+  background-color: $midnight;
+  overflow: hidden;
+}
+
+
+.events-section__costume,
+.events-section__food {
+  position: relative;
+}
+
+.events-section__food {
+  background: 
+    black
+    url("#{$asset-path}" + "#{$food-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px;
+  @media screen and (min-width: $bp-small+50){
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (min-width: $bp-large+20){
+    width: 500px;
+    height: 500px;
+  }
+
+}
+.events-section__costume {
+  background: 
+    black
+    url("#{$asset-path}" + "#{$costume-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 320px;
+  height: 320px;
+  @media screen and (min-width: $bp-small+50){
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (min-width: $bp-large+20){
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.events-section__caption {
+  position: absolute;
+  bottom: 0;
+  color: $white;
+  padding: 3em;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(-180deg, rgba(2,7,16,0.00) 19%, rgba(2,7,16,0.98) 71%, #020710 100%);
+}
+.events-section__caption p {
+  padding-bottom: 1.5em;
+}
+
+.donations-section__image {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.25);
+}
+
+.donations-section__blurb {
+  
+  @media screen and (min-width: $bp-small){
+    padding-left:3em;
+  }
+}
+
+.adios-section {
+  padding-top: 3em;
+    background:
+        linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+        black
+        url("#{$asset-path}" + "#{$footer-background}");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 150%;
+  @media screen and (min-width: $bp-small){
+    padding-top: 6em;
+  }
+}
+
+
+.adios-section__blurb{
+  color: $ruby;
+
+  button {
+    margin-top: 1.5em;
+  }
+}
+
+.adios-section__headline {
+  font-size: $type--xl;
+}
+
+.logo--small {
+  width: 100%;
+  max-width: 200px;
+}
+
+.upside-up {
+  position: relative;
+  padding-top: 6em;
+}
+.upside-down {
+  cursor: pointer;
+  bottom: 0;
+  position: absolute;
+  opacity: 0.5;
+  max-width: 300px;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+  @media screen and (min-width: $bp-large){
+    max-width: 600px;
+  }
+}

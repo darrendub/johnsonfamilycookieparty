@@ -1,0 +1,36 @@
+.btn {
+  @include btn-base;
+  border-radius: $border-radius;
+  padding: .25em 1.5em;
+}
+
+.btn--primary {
+  background-color: $ruby;
+  color: white;
+  font-family: $font-stack--serif;
+  margin-bottom: 2em;
+}
+
+.btn--mirror {
+  transform: scale(-1, 1);
+
+  &:hover,
+  &:focus {
+    transform: none;
+  }
+}
+
+.btn--large {
+  font-size: 2em;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(black, 0.2);
+  }
+}
