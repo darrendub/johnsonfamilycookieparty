@@ -73,6 +73,11 @@ p {
   font-family: "Amarante", cursive;
   margin-bottom: 2em; }
 
+.btn--secondary {
+  background-color: #FFF;
+  color: #020710;
+  font-family: "Arimo", sans-serif; }
+
 .btn--mirror {
   transform: scale(-1, 1); }
   .btn--mirror:hover, .btn--mirror:focus {

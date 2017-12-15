@@ -11,6 +11,12 @@
   margin-bottom: 2em;
 }
 
+.btn--secondary {
+  background-color: $white;
+  color: $midnight;
+  font-family: $font-stack--sans;
+}
+
 .btn--mirror {
   transform: scale(-1, 1);
 
