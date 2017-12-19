@@ -299,6 +299,22 @@ p {
   .donations-section__blurb {
     padding-left: 3em; } }
 
+.elephant-section {
+  background-color: #13233A;
+  color: #FFF;
+  text-align: center; }
+  .elephant-section h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.tag {
+  font-size: .5em;
+  background-color: #020710;
+  color: #FFF;
+  padding: 0.75em;
+  border-radius: 100px; }
+
 .adios-section {
   padding-top: 3em;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), black url("../images/footer-bg.png");

@@ -234,6 +234,24 @@
     padding-left:3em;
   }
 }
+.elephant-section {
+  background-color: $very-dark-blue;
+  color: $white;
+  text-align: center;
+  h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.tag {
+  font-size: .5em;
+  background-color: $midnight;
+  color: $white;
+  padding: 0.75em;
+  border-radius: 100px;
+}
 
 .adios-section {
   padding-top: 3em;
