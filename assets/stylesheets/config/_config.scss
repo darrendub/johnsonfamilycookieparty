@@ -1,12 +1,9 @@
 // Spacing + Layout
 $border-radius: 4px;
 
-// Asset URLs
-$asset-path: "../images/"; // TODO: change to non-local
+$unit--xs: 8px;
+$unit--small: 16px;
+$unit--medium: 24px;
+$unit--large: 32px;
+$unit--xl: 40px;
 
-$hero-background: "header-bg.png";
-$joyce-background: "joyce-bg.png";
-$footer-background: "footer-bg.png";
-$food-background: "eleven.jpg";
-$costume-background: "dustin.jpg";
-$cookie-logo: "cookiepartythings-logo.png";

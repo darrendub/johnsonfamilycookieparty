@@ -1,8 +1,3 @@
-.book {
-  max-width: 500px;
-  width: 90%;
-}
-
 .btn {
   @include btn-base;
   border-radius: $border-radius;
@@ -12,7 +7,7 @@
 .btn--primary {
   background-color: $ruby;
   color: white;
-  font-family: $font-stack--sans;
+  font-family: $font-stack--serif;
   margin-bottom: 2em;
 }
 
@@ -20,6 +15,15 @@
   background-color: $white;
   color: $midnight;
   font-family: $font-stack--sans;
+}
+
+.btn--mirror {
+  transform: scale(-1, 1);
+
+  &:hover,
+  &:focus {
+    transform: none;
+  }
 }
 
 .btn--large {

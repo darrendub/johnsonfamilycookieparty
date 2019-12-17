@@ -1,6 +1,4 @@
-$font-stack--sans: 'Arimo', sans-serif;
-$font-stack--serif: 'Amarante', cursive;
-$font-stack--retro: 'arcade', Courier, monospace;
+$font-stack--sans: 'Chewy', cursive;
 
 $weight--regular: 400;
 $weight--semibold: 600;
@@ -11,13 +9,6 @@ $type--medium: 24px;
 $type--large: 32px;
 $type--xl: 40px;
 
-@font-face {
-    font-family: 'arcade';
-    src: url('../font/arcade.woff2') format('woff2'),
-         url('../font/arcade.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
   font-family: $font-stack--sans;
@@ -27,4 +18,16 @@ body {
 
 p {
   margin: 0;
+}
+
+.type-small {
+	font-size: $type--small;
+}
+
+.type-medium {
+	font-size: $type--medium;
+}
+
+.type-large {
+	font-size: $type--large;
 }
