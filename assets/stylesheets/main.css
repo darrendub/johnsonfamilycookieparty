@@ -275,6 +275,9 @@ p {
 .book {
   max-width: 500px;
   width: 90%; }
+  @media only screen and (max-width: 480px) {
+    .book {
+      width: 70%; } }
 
 .btn {
   border: 0;
