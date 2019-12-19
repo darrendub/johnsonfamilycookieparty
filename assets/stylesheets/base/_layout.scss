@@ -1,11 +1,53 @@
 .wrapper {
   max-width: 90%;
+  padding: $unit--large;
   margin: 0 auto;
+
 }
 
 .center {
     margin: 0 auto; 
 }
+
+section {
+    height: 80vh;
+}
+
+
+.bg-dark-blue{
+    background-color: $dark-blue;
+}
+.bg-light-blue{
+    background-color: $light-blue;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-green{
+    background-color: $green;
+}
+.bg-orange{
+    background-color: $orange;
+}
+.bg-blue{
+    background-color: $blue;
+}
+
+footer {
+    background-color: $midnight;
+    padding: $unit--xl;
+    color: $white;
+    text-align: center;
+
+    a {
+        color: $white;
+        &:visited {
+          color: $white;  
+        }
+    }
+}
+
+
 //Base unit used for spacing gutters
 $base-unit:8px;
 
