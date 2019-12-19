@@ -23,10 +23,42 @@ svg {
 
 .wrapper {
   max-width: 90%;
+  padding: 32px;
   margin: 0 auto; }
 
 .center {
   margin: 0 auto; }
+
+section {
+  height: 80vh; }
+
+.bg-dark-blue {
+  background-color: #037DA9; }
+
+.bg-light-blue {
+  background-color: #7ED3F7; }
+
+.bg-yellow {
+  background-color: #FFF149; }
+
+.bg-green {
+  background-color: #008742; }
+
+.bg-orange {
+  background-color: #F37735; }
+
+.bg-blue {
+  background-color: #028BD4; }
+
+footer {
+  background-color: #020710;
+  padding: 40px;
+  color: #FFF;
+  text-align: center; }
+  footer a {
+    color: #FFF; }
+    footer a:visited {
+      color: #FFF; }
 
 .grid {
   box-sizing: border-box;
@@ -261,7 +293,8 @@ body {
   line-height: 1.5; }
 
 p {
-  margin: 0; }
+  margin: 0;
+  color: #037DA9; }
 
 .type-small {
   font-size: 16px; }
@@ -272,42 +305,16 @@ p {
 .type-large {
   font-size: 32px; }
 
-.book {
-  max-width: 500px;
-  width: 90%; }
-  @media only screen and (max-width: 480px) {
-    .book {
-      width: 70%; } }
+.type-white {
+  color: #FFF; }
 
-.btn {
-  border: 0;
-  box-shadow: none;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  border-radius: 4px;
-  padding: .25em 1.5em; }
-  .btn[disabled] {
-    cursor: not-allowed; }
+.type-center {
+  text-align: center; }
 
-.btn--primary {
-  background-color: #D22418;
-  color: white;
-  font-family: "Chewy", cursive;
-  margin-bottom: 2em; }
+.illustration {
+  width: 100%;
+  max-width: 540px; }
 
-.btn--secondary {
-  background-color: #FFF;
-  color: #020710;
-  font-family: "Chewy", cursive; }
-
-.btn--large {
-  font-size: 2em; }
-
-.btn--outline {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white; }
-  .btn--outline:hover, .btn--outline:focus {
-    background-color: rgba(0, 0, 0, 0.2); }
+.illustration-long {
+  width: 100%;
+  max-width: 1200px; }

@@ -18,6 +18,7 @@ body {
 
 p {
   margin: 0;
+  color: $dark-blue;
 }
 
 .type-small {
@@ -30,4 +31,12 @@ p {
 
 .type-large {
 	font-size: $type--large;
+}
+
+.type-white {
+	color: $white;
+}
+
+.type-center {
+	text-align: center;
 }
