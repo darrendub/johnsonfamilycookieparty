@@ -1,9 +1,13 @@
 .illustration {
   width: 100%;
   max-width: 540px;
+  @media screen and (max-width: 650px) {
+  	max-width: 320px;
+  	padding-top: $unit--large;
+  }
 }
 
 .illustration-long {
   width: 100%;
-  max-width: 1200px;
+  padding-top: $unit--large;
 }

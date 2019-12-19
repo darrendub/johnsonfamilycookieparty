@@ -314,7 +314,11 @@ p {
 .illustration {
   width: 100%;
   max-width: 540px; }
+  @media screen and (max-width: 650px) {
+    .illustration {
+      max-width: 320px;
+      padding-top: 32px; } }
 
 .illustration-long {
   width: 100%;
-  max-width: 1200px; }
+  padding-top: 32px; }
