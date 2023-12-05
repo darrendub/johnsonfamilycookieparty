@@ -30,7 +30,7 @@ svg {
   margin: 0 auto; }
 
 section {
-  height: 100vh; }
+  height: 80vh; }
 
 .bg-dark-blue {
   background-color: #037DA9; }
@@ -49,9 +49,6 @@ section {
 
 .bg-blue {
   background-color: #028BD4; }
-
-.bg-midnight {
-  background-color: #020710; }
 
 footer {
   background-color: #020710;
@@ -291,7 +288,7 @@ footer {
     max-width: 100%; } }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Chewy", cursive;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -321,6 +318,7 @@ p {
     .illustration {
       max-width: 320px;
       padding-top: 32px; } }
+
 .illustration-long {
   width: 100%;
   padding-top: 32px; }

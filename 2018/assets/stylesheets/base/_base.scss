@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img,
+svg {
+  display: block;
+}
+
+$unit--xs: 8px;
+$unit--small: 16px;
+$unit--medium: 24px;
+$unit--large: 32px;
+$unit--xl: 40px;
