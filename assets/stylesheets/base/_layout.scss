@@ -2,17 +2,65 @@
   max-width: 90%;
   padding: $unit--large;
   margin: 0 auto;
-
 }
 
 .center {
-    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 section {
     height: 100vh;
 }
 
+header {
+    border-top: 1px solid #fff;
+    top: 40px;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        padding-top: 16px;
+        color: $white;
+        font-size: $type--small;
+    }
+}
+
+.bg-carousel {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: auto; 
+}
+
+@media only screen and (max-width: 1060px) {
+    .bg-carousel {
+        width: auto;
+        height: 100vh; 
+    }
+}
+
+// .bg-carousel-board {
+//     background: url(images/carousel-board.jpg) no-repeat center center fixed;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover; 
+// }
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+    right: 0;
+}
 
 .bg-dark-blue{
     background-color: $dark-blue;
