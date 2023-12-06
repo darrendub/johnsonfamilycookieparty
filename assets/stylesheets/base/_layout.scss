@@ -1,3 +1,5 @@
+
+
 .wrapper {
   max-width: 90%;
   padding: $unit--large;
@@ -36,7 +38,8 @@ header {
     top: 0; 
     left: 0;
     width: 100vw;
-    height: auto; 
+    height: auto;
+    opacity: 0.5; 
 }
 
 @media only screen and (max-width: 1060px) {
