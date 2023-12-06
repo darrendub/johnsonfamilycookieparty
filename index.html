@@ -17,25 +17,44 @@
     <meta property="og:url" content="http://johnsonfamilycookieparty.com"/>
     <meta property="og:image" content="http://johnsonfamilycookieparty.com/assets/images/social-card.jpg"/>
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
-    <section class="bg-midnight">
-      <div class="wrapper">
-        <div class='grid'>
-          <div class='col'>
-            <h1 class="type-large type-center type-white">Something is happening at Johnson Family Cookie Party...</h1>
-            <p class="type-medium type-center type-white">December 23</p>
-          </div>
+    <header>
+      <p class="f-left"><a class="type-white" href="https://www.instagram.com/johnsonfamilycookieparty/">@johnsonfamilycookieparty</a></p>
+      <p class="f-right">December 23</p>
+    </header>
+    <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true }'> 
+      <div class="carousel-cell bg-carousel-board">
+        <img class="bg-carousel" src="assets/images/carousel-board.jpg">
+        <div class="center carousel-text type-center type-white">
+          <h1>Board not <i>bored.</i></h1>
+          <p>Bring a board of your choosing. Be creative.</p>
         </div>
       </div>
-    </section>
-
-    
-    <!-- <footer>
-      <p class="type-medium">For more on what's in store: <a href="https://www.instagram.com/johnsonfamilycookieparty/">@johnsonfamilycookieparty</a></p>
-    </footer> -->
+      <div class="carousel-cell">
+        <img class="bg-carousel" src="assets/images/carousel-present.jpg">
+        <div class="center carousel-text type-center type-white">
+          <h1>Be (a) present.</h1>
+          <p>Wear your most festive attire. Your presence is a present.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <img class="bg-carousel" src="assets/images/carousel-wrap.jpg">
+        <div class="center carousel-text type-center type-white">
+          <h1>Wrap it up.</h1>
+          <p>If you want, bring a wrapped gift ($20). If you don't, then don't.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <img class="bg-carousel" src="assets/images/carousel-lit.jpg">
+        <div class="center carousel-text type-center type-white">
+          <h1>Have yourself a merry lit mas.</h1>
+          <p>Let's make this yuletide gay.</p>
+        </div>
+      </div>
+    </div>
   </body>
   </html>
