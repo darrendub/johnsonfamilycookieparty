@@ -1205,7 +1205,7 @@
     },
     "\/assets\/images\/social-card.png" : {
       "ft" : 32768,
-      "iS" : 356787,
+      "iS" : 356019,
       "oA" : 0,
       "oAP" : "\/assets\/images\/social-card.png",
       "oF" : 0,
@@ -1443,18 +1443,6 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 0
-    },
-    "\/mnml.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/mnml-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/README.md" : {
       "cB" : 0,
